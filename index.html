@@ -107,153 +107,155 @@
         </div>
     </div>
 
-    <!-- Projects Screen -->
-    <div id="projects" class="screen">
-        <div class="screen-container">
-            <div class="screen-header">
-                <h1>Selected <span class="gradient-text">Projects</span></h1>
-                <p>A showcase of my technical projects and innovations</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-item" onclick="window.open('https://github.com/FA22-BCS-004/Parallel-Recommendation-System', '_blank')">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" alt="Movie Recommendation">
+<!-- Projects Screen -->
+<div id="projects" class="screen">
+    <div class="screen-container">
+        <div class="screen-header">
+            <h1>Selected <span class="gradient-text">Projects</span></h1>
+            <p>A showcase of my technical projects and innovations</p>
+        </div>
+        <div class="projects-grid">
+
+            <!-- Parallel Recommendation System -->
+            <div class="project-item" onclick="window.open('https://github.com/FA22-BCS-004/Parallel-Recommendation-System', '_blank')">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" alt="Movie Recommendation">
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-category">Machine Learning</span>
+                        <i class="fas fa-external-link-alt"></i>
                     </div>
-                    <div class="project-content">
-                        <div class="project-meta">
-                            <span class="project-category">Machine Learning</span>
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                        <h3>Parallel and Distributed Computing Project</h3>
-                        <p>Implementation of parallel algorithms and distributed computing concepts for enhanced performance and scalability</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">Machine Learning</span>
-                        </div>
+                    <h3>Parallel and Distributed Computing Project</h3>
+                    <p>Implementation of parallel algorithms and distributed computing concepts for enhanced performance and scalability</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Scikit-Learn</span>
+                        <span class="tech-tag">Machine Learning</span>
                     </div>
                 </div>
+            </div>
 
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop" alt="AWS Cloud">
+            <!-- AWS Project -->
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop" alt="AWS Cloud">
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-category">Cloud Computing</span>
+                        <div class="project-actions">
+                            <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
+                            <i class="fas fa-download" onclick="downloadFile('Files/AWS%20PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')" title="Download PDF"></i>
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <div class="project-meta">
-                            <span class="project-category">Cloud Computing</span>
-                            <div class="project-actions">
-                                <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
-                                <i class="fas fa-download" onclick="downloadFile('files/AWS PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')" title="Download PDF"></i>
+                    <h3>AWS Cloud Infrastructure</h3>
+                    <p>Deployed a movie catalog application on an EC2 instance with S3-backed storage for movie posters and Apache2 hosting.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">EC2</span>
+                        <span class="tech-tag">S3</span>
+                        <span class="tech-tag">Apache2</span>
+                    </div>
+                    <div class="project-details" style="display: none;">
+                        <div class="project-expanded">
+                            <h4>Project Overview</h4>
+                            <p>This project showcases a functional deployment of a movie collection web app on AWS infrastructure...</p>
+
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li><strong>IAM Configuration:</strong> Created IAM user and EC2-attached IAM role to access the S3 bucket</li>
+                                <li><strong>EC2 Setup:</strong> Launched and secured an Ubuntu instance with HTTP and SSH access</li>
+                                <li><strong>S3 Bucket:</strong> Stored movie posters in <code>movie-assets1</code> using custom bucket policy</li>
+                                <li><strong>Apache2 Server:</strong> Hosted a custom <code>index.html</code> to display movie posters and metadata</li>
+                                <li><strong>AWS CLI:</strong> Used <code>aws s3 cp</code> to upload images and manage storage efficiently</li>
+                            </ul>
+
+                            <h4>Technical Implementation</h4>
+                            <p>The setup included a secure IAM role, bucket policy restrictions, server-side configuration, and file uploads...</p>
+
+                            <div class="download-section">
+                                <button class="btn-download" onclick="downloadFile('Files/AWS%20PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Download Full Documentation (PDF)
+                                </button>
                             </div>
                         </div>
-<h3>AWS Cloud Infrastructure</h3>
-<p>Deployed a movie catalog application on an EC2 instance with S3-backed storage for movie posters and Apache2 hosting.</p>
-<div class="project-tech">
-    <span class="tech-tag">AWS</span>
-    <span class="tech-tag">EC2</span>
-    <span class="tech-tag">S3</span>
-    <span class="tech-tag">Apache2</span>
-</div>
-<div class="project-details" style="display: none;">
-    <div class="project-expanded">
-        <h4>Project Overview</h4>
-        <p>This project showcases a functional deployment of a movie collection web app on AWS infrastructure. EC2 hosts the website while S3 is used to store movie posters. IAM roles and the AWS CLI were used for secure asset management and automation.</p>
-
-        <h4>Key Features</h4>
-        <ul>
-            <li><strong>IAM Configuration:</strong> Created IAM user and EC2-attached IAM role to access the S3 bucket</li>
-            <li><strong>EC2 Setup:</strong> Launched and secured an Ubuntu instance with HTTP and SSH access</li>
-            <li><strong>S3 Bucket:</strong> Stored movie posters in <code>movie-assets1</code> using custom bucket policy</li>
-            <li><strong>Apache2 Server:</strong> Hosted a custom <code>index.html</code> to display movie posters and metadata</li>
-            <li><strong>AWS CLI:</strong> Used <code>aws s3 cp</code> to upload images and manage storage efficiently</li>
-        </ul>
-
-        <h4>Technical Implementation</h4>
-        <p>The setup included a secure IAM role, bucket policy restrictions, server-side configuration, and file uploads using CLI. All steps are documented in detail, from instance setup to poster display using HTML and Apache2.</p>
-
-        <div class="download-section">
-            <button class="btn-download" onclick="downloadFile('Files/AWS PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')
-">
-                <i class="fas fa-file-pdf"></i>
-                Download Full Documentation (PDF)
-            </button>
-        </div>
-    </div>
-</div>
-
                     </div>
                 </div>
-
-<div class="project-item">
-    <div class="project-image">
-        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="Prompt Engineering">
-    </div>
-    <div class="project-content">
-        <div class="project-meta">
-            <span class="project-category">AI & Prompt Engineering</span>
-            <div class="project-actions">
-                <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
-                <i class="fas fa-download" onclick="downloadFile('files/Final Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')" title="Download PPTX"></i>
             </div>
-        </div>
-        <h3>Advanced Prompt Engineering</h3>
-        <p>Designed fair and inclusive AI prompts for real-world applications, with a focus on ethical considerations and bias mitigation.</p>
-        <div class="project-tech">
-            <span class="tech-tag">ChatGPT</span>
-            <span class="tech-tag">Cohere</span>
-            <span class="tech-tag">Prompt Design</span>
-            <span class="tech-tag">Ethical AI</span>
-        </div>
-        <div class="project-details" style="display: none;">
-            <div class="project-expanded">
-                <h4>Project Overview</h4>
-                <p>This project demonstrates the design of ethical and effective prompts for use with large language models. It emphasizes fairness, bias mitigation, and real-world scenarios in leadership, diversity, and teamwork.</p>
 
-                <h4>LLM Tool Used</h4>
-                <p><strong>Cohere</strong> was selected due to its strong context understanding and ability to generate unbiased, coherent responses suitable for ethical discussions and inclusive design.</p>
+            <!-- Prompt Engineering Project -->
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="Prompt Engineering">
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-category">AI & Prompt Engineering</span>
+                        <div class="project-actions">
+                            <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
+                            <i class="fas fa-download" onclick="downloadFile('Files/Final%20Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')" title="Download PPTX"></i>
+                        </div>
+                    </div>
+                    <h3>Advanced Prompt Engineering</h3>
+                    <p>Designed fair and inclusive AI prompts for real-world applications, with a focus on ethical considerations and bias mitigation.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ChatGPT</span>
+                        <span class="tech-tag">Cohere</span>
+                        <span class="tech-tag">Prompt Design</span>
+                        <span class="tech-tag">Ethical AI</span>
+                    </div>
+                    <div class="project-details" style="display: none;">
+                        <div class="project-expanded">
+                            <h4>Project Overview</h4>
+                            <p>This project demonstrates the design of ethical and effective prompts for use with large language models...</p>
 
-                <h4>Prompt Variations</h4>
-                <ul>
-                    <li><strong>Variation 1:</strong> “Please answer this question with a focus on fairness and equality... Can someone who works smarter, rather than harder, succeed just as much?”</li>
-                    <li><strong>Variation 2:</strong> “Please answer this question while considering how bias and assumptions affect perceptions... Can people from different cultural backgrounds bring equal value to a team?”</li>
-                    <li><strong>Variation 3:</strong> “Please answer this question while being aware of how personal biases influence experiences... Can introverted individuals excel in leadership roles?”</li>
-                </ul>
+                            <h4>LLM Tool Used</h4>
+                            <p><strong>Cohere</strong> was selected...</p>
 
-                <h4>Analysis & Comparison</h4>
-                <ul>
-                    <li><strong>Variation 1:</strong> Promotes efficiency vs. effort, encouraging fairness over work hours.</li>
-                    <li><strong>Variation 2:</strong> Emphasizes inclusion and cultural diversity in teamwork.</li>
-                    <li><strong>Variation 3:</strong> Challenges common leadership stereotypes about introversion and extroversion.</li>
-                </ul>
-                <p><strong>Conclusion:</strong> Variation 3 was the most effective in addressing deep-rooted biases while maintaining clarity and inclusivity.</p>
+                            <h4>Prompt Variations</h4>
+                            <ul>
+                                <li><strong>Variation 1:</strong> “Please answer this question with a focus on fairness and equality...”</li>
+                                <li><strong>Variation 2:</strong> “Please answer this question while considering how bias and assumptions affect perceptions...”</li>
+                                <li><strong>Variation 3:</strong> “Please answer this question while being aware of how personal biases influence experiences...”</li>
+                            </ul>
 
-                <h4>Challenges Faced</h4>
-                <ul>
-                    <li>Avoiding reinforcement of stereotypes while crafting prompts on sensitive topics.</li>
-                    <li>Finding language that balances fairness and realism.</li>
-                </ul>
+                            <h4>Analysis & Comparison</h4>
+                            <ul>
+                                <li><strong>Variation 1:</strong> Promotes efficiency vs. effort...</li>
+                                <li><strong>Variation 2:</strong> Emphasizes inclusion and cultural diversity...</li>
+                                <li><strong>Variation 3:</strong> Challenges leadership stereotypes...</li>
+                            </ul>
 
-                <h4>Improvements & Next Steps</h4>
-                <ul>
-                    <li>Include more contextual examples or real-life cases in prompt design.</li>
-                    <li>Experiment with other LLMs and test phrasing to enhance inclusivity and practicality.</li>
-                </ul>
+                            <h4>Challenges Faced</h4>
+                            <ul>
+                                <li>Avoiding reinforcement of stereotypes...</li>
+                                <li>Finding balanced language...</li>
+                            </ul>
 
-                <div class="download-section">
-                    <button class="btn-download" onclick="downloadFile('files/Final Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')">
-                        <i class="fas fa-file-powerpoint"></i>
-                        Download Full Presentation (PPTX)
-                    </button>
+                            <h4>Improvements & Next Steps</h4>
+                            <ul>
+                                <li>Include more real-life prompt examples</li>
+                                <li>Test with more LLMs</li>
+                            </ul>
+
+                            <div class="download-section">
+                                <button class="btn-download" onclick="downloadFile('Files/Final%20Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')">
+                                    <i class="fas fa-file-powerpoint"></i>
+                                    Download Full Presentation (PPTX)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
 
-            </div>
-        </div>
-    </div>
 
     <!-- Certificates Screen -->
     <div id="certificates" class="screen">
