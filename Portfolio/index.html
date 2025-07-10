@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sana Kamran Butt | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-toggle-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">sana.portfolio</div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link active" data-screen="home">Home</a>
+                <a href="#" class="nav-link" data-screen="projects">Projects</a>
+                <a href="#" class="nav-link" data-screen="certificates">Certificates</a>
+                <a href="#" class="nav-link" data-screen="resume">Resume</a>
+                <a href="#" class="nav-link" data-screen="about">About</a>
+                <a href="#" class="nav-link" data-screen="contact">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Screen -->
+    <div id="home" class="screen active">
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="home-title">
+                        Hi, I'm <span class="gradient-text">Sana</span>
+                    </h1>
+                    <p class="home-subtitle">
+                        Computer Science student at COMSATS University with hands-on experience in cloud engineering, prompt engineering, and Python development. 
+                        Previously worked as Social Media Manager at GenAI Training, developing engaging digital content and managing campaigns.
+                    </p>
+                    <div class="home-buttons">
+                        <button class="btn-primary" data-screen="projects">
+                            View My Work
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn-secondary" data-screen="contact">
+                            Get In Touch
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/sana-kamran-butt-034b70288" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/FA22-BCS-004" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:kamransana401@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-container">
+                    <div class="profile-image-wrapper">
+                        <img src="images/Profile.jpg" alt="Sana Kamran Butt" class="profile-image">
+                    </div>
+                    <div class="home-grid">
+                        <div class="grid-column">
+                            <div class="project-card large">
+                                <div class="card-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <h3>Cloud Solutions</h3>
+                                <p>AWS & Cloud Engineering</p>
+                            </div>
+                            <div class="project-card small">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=300&fit=crop" alt="E-commerce">
+                                </div>
+                                <h4>eBay Dropshipping</h4>
+                            </div>
+                        </div>
+                        <div class="grid-column offset">
+                            <div class="project-card small">
+                                <div class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI Projects">
+                                </div>
+                                <h4>AI & Prompt Engineering</h4>
+                            </div>
+                            <div class="project-card large">
+                                <div class="card-icon purple">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <h3>Certificates</h3>
+                                <p>Professional Credentials</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Screen -->
+    <div id="projects" class="screen">
+        <div class="screen-container">
+            <div class="screen-header">
+                <h1>Selected <span class="gradient-text">Projects</span></h1>
+                <p>A showcase of my technical projects and innovations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item" onclick="window.open('https://github.com/FA22-BCS-004/Parallel-Recommendation-System', '_blank')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" alt="Movie Recommendation">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Machine Learning</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <h3>Parallel and Distributed Computing Project</h3>
+                        <p>Implementation of parallel algorithms and distributed computing concepts for enhanced performance and scalability</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop" alt="AWS Cloud">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Cloud Computing</span>
+                            <div class="project-actions">
+                                <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
+                                <i class="fas fa-download" onclick="downloadFile('files/AWS PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')" title="Download PDF"></i>
+                            </div>
+                        </div>
+<h3>AWS Cloud Infrastructure</h3>
+<p>Deployed a movie catalog application on an EC2 instance with S3-backed storage for movie posters and Apache2 hosting.</p>
+<div class="project-tech">
+    <span class="tech-tag">AWS</span>
+    <span class="tech-tag">EC2</span>
+    <span class="tech-tag">S3</span>
+    <span class="tech-tag">Apache2</span>
+</div>
+<div class="project-details" style="display: none;">
+    <div class="project-expanded">
+        <h4>Project Overview</h4>
+        <p>This project showcases a functional deployment of a movie collection web app on AWS infrastructure. EC2 hosts the website while S3 is used to store movie posters. IAM roles and the AWS CLI were used for secure asset management and automation.</p>
+
+        <h4>Key Features</h4>
+        <ul>
+            <li><strong>IAM Configuration:</strong> Created IAM user and EC2-attached IAM role to access the S3 bucket</li>
+            <li><strong>EC2 Setup:</strong> Launched and secured an Ubuntu instance with HTTP and SSH access</li>
+            <li><strong>S3 Bucket:</strong> Stored movie posters in <code>movie-assets1</code> using custom bucket policy</li>
+            <li><strong>Apache2 Server:</strong> Hosted a custom <code>index.html</code> to display movie posters and metadata</li>
+            <li><strong>AWS CLI:</strong> Used <code>aws s3 cp</code> to upload images and manage storage efficiently</li>
+        </ul>
+
+        <h4>Technical Implementation</h4>
+        <p>The setup included a secure IAM role, bucket policy restrictions, server-side configuration, and file uploads using CLI. All steps are documented in detail, from instance setup to poster display using HTML and Apache2.</p>
+
+        <div class="download-section">
+            <button class="btn-download" onclick="downloadFile('files/AWS PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')">
+                <i class="fas fa-file-pdf"></i>
+                Download Full Documentation (PDF)
+            </button>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+
+<div class="project-item">
+    <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="Prompt Engineering">
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">AI & Prompt Engineering</span>
+            <div class="project-actions">
+                <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
+                <i class="fas fa-download" onclick="downloadFile('files/Final Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')" title="Download PPTX"></i>
+            </div>
+        </div>
+        <h3>Advanced Prompt Engineering</h3>
+        <p>Designed fair and inclusive AI prompts for real-world applications, with a focus on ethical considerations and bias mitigation.</p>
+        <div class="project-tech">
+            <span class="tech-tag">ChatGPT</span>
+            <span class="tech-tag">Cohere</span>
+            <span class="tech-tag">Prompt Design</span>
+            <span class="tech-tag">Ethical AI</span>
+        </div>
+        <div class="project-details" style="display: none;">
+            <div class="project-expanded">
+                <h4>Project Overview</h4>
+                <p>This project demonstrates the design of ethical and effective prompts for use with large language models. It emphasizes fairness, bias mitigation, and real-world scenarios in leadership, diversity, and teamwork.</p>
+
+                <h4>LLM Tool Used</h4>
+                <p><strong>Cohere</strong> was selected due to its strong context understanding and ability to generate unbiased, coherent responses suitable for ethical discussions and inclusive design.</p>
+
+                <h4>Prompt Variations</h4>
+                <ul>
+                    <li><strong>Variation 1:</strong> “Please answer this question with a focus on fairness and equality... Can someone who works smarter, rather than harder, succeed just as much?”</li>
+                    <li><strong>Variation 2:</strong> “Please answer this question while considering how bias and assumptions affect perceptions... Can people from different cultural backgrounds bring equal value to a team?”</li>
+                    <li><strong>Variation 3:</strong> “Please answer this question while being aware of how personal biases influence experiences... Can introverted individuals excel in leadership roles?”</li>
+                </ul>
+
+                <h4>Analysis & Comparison</h4>
+                <ul>
+                    <li><strong>Variation 1:</strong> Promotes efficiency vs. effort, encouraging fairness over work hours.</li>
+                    <li><strong>Variation 2:</strong> Emphasizes inclusion and cultural diversity in teamwork.</li>
+                    <li><strong>Variation 3:</strong> Challenges common leadership stereotypes about introversion and extroversion.</li>
+                </ul>
+                <p><strong>Conclusion:</strong> Variation 3 was the most effective in addressing deep-rooted biases while maintaining clarity and inclusivity.</p>
+
+                <h4>Challenges Faced</h4>
+                <ul>
+                    <li>Avoiding reinforcement of stereotypes while crafting prompts on sensitive topics.</li>
+                    <li>Finding language that balances fairness and realism.</li>
+                </ul>
+
+                <h4>Improvements & Next Steps</h4>
+                <ul>
+                    <li>Include more contextual examples or real-life cases in prompt design.</li>
+                    <li>Experiment with other LLMs and test phrasing to enhance inclusivity and practicality.</li>
+                </ul>
+
+                <div class="download-section">
+                    <button class="btn-download" onclick="downloadFile('files/Final Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')">
+                        <i class="fas fa-file-powerpoint"></i>
+                        Download Full Presentation (PPTX)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificates Screen -->
+    <div id="certificates" class="screen">
+        <div class="screen-container">
+            <div class="screen-header">
+                <h1>Professional <span class="gradient-text">Certificates</span></h1>
+                <p>Credentials and achievements in technology and AI</p>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-item" onclick="openCertificateModal('images/Certificate1.jpg', 'AWS Cloud Computing Certificate')">
+                    <div class="certificate-image">
+                        <img src="images/Certificate1.jpg" alt="AWS Certificate">
+                    </div>
+                    <div class="certificate-content">
+                        <div class="certificate-meta">
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                2024
+                            </div>
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>AWS Cloud Computing</h3>
+                        <p>Amazon Web Services</p>
+                        <div class="certificate-skills">
+                            <span class="skill-tag">EC2</span>
+                            <span class="skill-tag">S3</span>
+                            <span class="skill-tag">Lambda</span>
+                            <span class="skill-tag">CloudFormation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-item" onclick="openCertificateModal('images/Certificate2.jpg', 'Advanced Prompt Engineering Certificate')">
+                    <div class="certificate-image">
+                        <img src="images/Certificate2.jpg" alt="Prompt Engineering">
+                    </div>
+                    <div class="certificate-content">
+                        <div class="certificate-meta">
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                2024
+                            </div>
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Advanced Prompt Engineering</h3>
+                        <p>GenAI Training</p>
+                        <div class="certificate-skills">
+                            <span class="skill-tag">GPT</span>
+                            <span class="skill-tag">Claude</span>
+                            <span class="skill-tag">Cohere</span>
+                            <span class="skill-tag">Prompt Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-item" onclick="openCertificateModal('images/Certificate3.png', 'Python Certificate')">
+                    <div class="certificate-image">
+                        <img src="images/Certificate3.png" alt="Python">
+                    </div>
+                    <div class="certificate-content">
+                        <div class="certificate-meta">
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                2025
+                            </div>
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <p>GenAI Training</p>
+                        <div class="certificate-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Programming</span>
+                            <span class="skill-tag">Development</span>
+                            <span class="skill-tag">Scripting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-item" onclick="openCertificateModal('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-10%20192450-9wCjwzWusmtFxWQjj9W5Y2L3yoVinM.png', 'Risk Assessment e-Learning Certificate')">
+                    <div class="certificate-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-10%20192450-9wCjwzWusmtFxWQjj9W5Y2L3yoVinM.png" alt="Risk Assessment Certificate">
+                    </div>
+                    <div class="certificate-content">
+                        <div class="certificate-meta">
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                September 2024
+                            </div>
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Risk Assessment e-Learning</h3>
+                        <p>Universal Robots</p>
+                        <div class="certificate-skills">
+                            <span class="skill-tag">Risk Assessment</span>
+                            <span class="skill-tag">Safety Protocols</span>
+                            <span class="skill-tag">e-Learning</span>
+                            <span class="skill-tag">Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Screen -->
+    <div id="about" class="screen">
+        <div class="screen-container">
+            <div class="screen-header">
+                <h1>About <span class="gradient-text">Me</span></h1>
+                <p>I am a passionate and motivated Computer Science student at COMSATS University, with hands-on experience in cloud engineering, prompt engineering, and Python development. Previously, I worked as a Social Media Manager at GenAI Training, where I developed engaging digital content, managed campaigns, and enhanced brand visibility. This experience allowed me to hone my skills in digital marketing and content creation. My technical skills include proficiency in programming languages such as Python, C, and C++, expertise in AWS services (EC2, S3) for cloud solutions, and strong knowledge of database management, including working with SQL and server-side technologies. Additionally, I have experience with prompt engineering using tools like Cohere and ChatGPT, as well as e-commerce strategies. I am always eager to learn, innovate, and apply my knowledge to real-world challenges.</p>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    Work Experience
+                </h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3>Social Media Manager</h3>
+                            <p class="company">GenAI Training</p>
+                        </div>
+                        <div class="experience-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                September 2024 - April 2025
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Remote
+                            </div>
+                        </div>
+                    </div>
+                    <p class="experience-description">
+                        Developed engaging digital content, managed campaigns, and enhanced brand visibility. This experience allowed me to hone my skills in digital marketing and content creation.
+                    </p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-chevron-right"></i>
+                            Created engaging digital content for AI training programs
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-chevron-right"></i>
+                            Managed multi-platform social media campaigns
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-chevron-right"></i>
+                            Enhanced brand visibility and engagement
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-chevron-right"></i>
+                            Developed content strategies for technical education
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3>Internee</h3>
+                            <p class="company">UBL (United Bank Limited)</p>
+                        </div>
+                        <div class="experience-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                June 2024 - August 2024
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Lahore, Punjab, Pakistan
+                            </div>
+                        </div>
+                    </div>
+                    <p class="experience-description">
+                        Completed a comprehensive 3-month internship program focusing on customer service and team management in a professional banking environment.
+                    </p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-chevron-right"></i>
+                            Gained hands-on experience in customer service and team management
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-chevron-right"></i>
+                            Handled customer inquiries and banking operations
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-chevron-right"></i>
+                            Developed professional communication and problem-solving skills
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-chevron-right"></i>
+                            Learned banking procedures and financial services protocols
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </h2>
+                <div class="education-item">
+                    <div class="education-header">
+                        <div class="education-info">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <p class="institution">COMSATS University Islamabad</p>
+                        </div>
+                        <div class="education-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                2022 - 2026
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Lahore, Pakistan
+                            </div>
+                        </div>
+                    </div>
+                    <p class="education-description">
+                        Specializing in Software Engineering, Cloud Computing, and AI Technologies with focus on practical applications and real-world problem solving.
+                    </p>
+                    <div class="coursework">
+                        <h4>Key Coursework:</h4>
+                        <div class="coursework-tags">
+                            <span class="course-tag">Databases</span>
+                            <span class="course-tag">Java Programming</span>
+                            <span class="course-tag">Data Structures & Algorithms</span>
+                            <span class="course-tag">Software Engineering</span>
+                            <span class="course-tag">Computer Networks</span>
+                            <span class="course-tag">Operating Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    Technical Skills
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Cloud & DevOps</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS EC2</span>
+                            <span class="skill-tag">AWS S3</span>
+                            <span class="skill-tag">Cloud Architecture</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>AI & Prompt Engineering</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ChatGPT</span>
+                            <span class="skill-tag">Cohere</span>
+                            <span class="skill-tag">Prompt Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Database & Backend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Database Management</span>
+                            <span class="skill-tag">Server Technologies</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>E-commerce & Marketing</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Social Media Management</span>
+                            <span class="skill-tag">Content Creation</span>
+                            <span class="skill-tag">Digital Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Screen -->
+    <div id="resume" class="screen">
+        <div class="screen-container">
+            <div class="screen-header">
+                <h1>My <span class="gradient-text">Resume</span></h1>
+                <p>Download my complete professional resume</p>
+            </div>
+        
+            <div class="resume-container">
+                <div class="resume-preview">
+                    <div class="resume-card">
+                        <div class="resume-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="resume-info">
+                            <h3>Professional Resume</h3>
+                            <p>Complete overview of my education, experience, skills, and achievements</p>
+                            <div class="resume-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>PDF Format</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Updated January 2025</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-download"></i>
+                                    <span>Ready to Download</span>
+                                </div>
+                            </div>
+                            <button class="btn-download-resume" onclick="downloadFile('Files/Sana Kamran Butt Resume  (3).pdf', 'Sana Kamran Butt Resume.pdf')">
+                                <i class="fas fa-download"></i>
+                                Download Resume
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="resume-highlights">
+                    <h3>Resume Highlights</h3>
+                    <div class="highlights-grid">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Education</h4>
+                            <p>Computer Science at COMSATS University</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <h4>Experience</h4>
+                            <p>Social Media Manager & Banking Intern</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Skills</h4>
+                            <p>Python, AWS, AI & Prompt Engineering</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <h4>Certifications</h4>
+                            <p>AWS, Python, Prompt Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Screen -->
+    <div id="contact" class="screen">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h1>Let's <span class="gradient-text">Connect</span></h1>
+                <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and innovation.</p>
+                
+                <div class="contact-grid">
+                    <a href="mailto:kamransana401@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info">
+                            <div class="contact-title">Email</div>
+                            <div class="contact-detail">kamransana401@gmail.com</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/sana-kamran-butt-034b70288" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="contact-info">
+                            <div class="contact-title">LinkedIn</div>
+                            <div class="contact-detail">Professional Profile</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="opportunities">
+                    <p>Currently seeking opportunities in:</p>
+                    <div class="opportunity-tags">
+                        <span class="opportunity-tag">Data Analysis</span>
+                        <span class="opportunity-tag">AI Solutions</span>
+                        <span class="opportunity-tag">Software Development</span>
+                        <span class="opportunity-tag">Digital Transformation</span>
+                        <span class="opportunity-tag">Social Media Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modalImage" src="/placeholder.svg" alt="Certificate">
+            <div id="modalCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
