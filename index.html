@@ -107,155 +107,140 @@
         </div>
     </div>
 
-<!-- Projects Screen -->
-<div id="projects" class="screen">
-    <div class="screen-container">
-        <div class="screen-header">
-            <h1>Selected <span class="gradient-text">Projects</span></h1>
-            <p>A showcase of my technical projects and innovations</p>
+    <!-- Projects Screen -->
+    <div id="projects" class="screen">
+        <div class="screen-container">
+            <div class="screen-header">
+                <h1>Selected <span class="gradient-text">Projects</span></h1>
+                <p>A showcase of my technical projects and innovations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item" onclick="window.open('https://github.com/FA22-BCS-004/Parallel-Recommendation-System', '_blank')">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" alt="Movie Recommendation">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Machine Learning</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <h3>Parallel and Distributed Computing Project</h3>
+                        <p>Implementation of parallel algorithms and distributed computing concepts for enhanced performance and scalability</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+<div class="project-item">
+    <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop" alt="AWS Cloud">
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">Cloud Computing</span>
+            <div class="project-actions">
+                <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
+                <i class="fas fa-download" onclick="downloadFile('Files/AWS%20PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')" title="Download PDF"></i>
+            </div>
         </div>
-        <div class="projects-grid">
+        <h3>AWS Cloud Infrastructure</h3>
+        <p>Scalable web application deployment using EC2 and S3 services with Apache2</p>
+        <div class="project-tech">
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">EC2</span>
+            <span class="tech-tag">S3</span>
+            <span class="tech-tag">Apache2</span>
+        </div>
+        <div class="project-details" style="display: none;">
+            <div class="project-expanded">
+                <h4>Project Overview</h4>
+                <p>This project demonstrates the deployment of a scalable web application infrastructure on Amazon Web Services (AWS). The implementation showcases cloud engineering best practices and modern deployment strategies.</p>
 
-            <!-- Parallel Recommendation System -->
-            <div class="project-item" onclick="window.open('https://github.com/FA22-BCS-004/Parallel-Recommendation-System', '_blank')">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" alt="Movie Recommendation">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">Machine Learning</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </div>
-                    <h3>Parallel and Distributed Computing Project</h3>
-                    <p>Implementation of parallel algorithms and distributed computing concepts for enhanced performance and scalability</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Scikit-Learn</span>
-                        <span class="tech-tag">Machine Learning</span>
-                    </div>
-                </div>
-            </div>
+                <h4>Key Features</h4>
+                <ul>
+                    <li><strong>EC2 Instance Configuration:</strong> Optimized virtual server setup for web hosting</li>
+                    <li><strong>S3 Storage Integration:</strong> Scalable object storage for static assets and backups</li>
+                    <li><strong>Apache2 Web Server:</strong> Robust web server configuration and optimization</li>
+                    <li><strong>Security Implementation:</strong> Proper security groups and access controls</li>
+                    <li><strong>Load Balancing:</strong> Traffic distribution for high availability</li>
+                </ul>
 
-            <!-- AWS Project -->
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop" alt="AWS Cloud">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">Cloud Computing</span>
-                        <div class="project-actions">
-                            <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
-                            <i class="fas fa-download" onclick="downloadFile('Files/AWS%20PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')" title="Download PDF"></i>
-                        </div>
-                    </div>
-                    <h3>AWS Cloud Infrastructure</h3>
-                    <p>Deployed a movie catalog application on an EC2 instance with S3-backed storage for movie posters and Apache2 hosting.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">EC2</span>
-                        <span class="tech-tag">S3</span>
-                        <span class="tech-tag">Apache2</span>
-                    </div>
-                    <div class="project-details" style="display: none;">
-                        <div class="project-expanded">
-                            <h4>Project Overview</h4>
-                            <p>This project showcases a functional deployment of a movie collection web app on AWS infrastructure...</p>
+                <h4>Technical Implementation</h4>
+                <p>The project includes comprehensive documentation covering infrastructure setup, security configurations, and deployment procedures. All configurations are documented with step-by-step instructions for reproducibility.</p>
 
-                            <h4>Key Features</h4>
-                            <ul>
-                                <li><strong>IAM Configuration:</strong> Created IAM user and EC2-attached IAM role to access the S3 bucket</li>
-                                <li><strong>EC2 Setup:</strong> Launched and secured an Ubuntu instance with HTTP and SSH access</li>
-                                <li><strong>S3 Bucket:</strong> Stored movie posters in <code>movie-assets1</code> using custom bucket policy</li>
-                                <li><strong>Apache2 Server:</strong> Hosted a custom <code>index.html</code> to display movie posters and metadata</li>
-                                <li><strong>AWS CLI:</strong> Used <code>aws s3 cp</code> to upload images and manage storage efficiently</li>
-                            </ul>
-
-                            <h4>Technical Implementation</h4>
-                            <p>The setup included a secure IAM role, bucket policy restrictions, server-side configuration, and file uploads...</p>
-
-                            <div class="download-section">
-                                <button class="btn-download" onclick="downloadFile('Files/AWS%20PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')">
-                                    <i class="fas fa-file-pdf"></i>
-                                    Download Full Documentation (PDF)
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="download-section">
+                    <button class="btn-download" onclick="downloadFile('Files/AWS%20PROJECT.pdf', 'AWS_Project_Sana_Kamran_Butt.pdf')">
+                        <i class="fas fa-file-pdf"></i>
+                        Download Full Documentation (PDF)
+                    </button>
                 </div>
             </div>
-
-            <!-- Prompt Engineering Project -->
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="Prompt Engineering">
-                </div>
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span class="project-category">AI & Prompt Engineering</span>
-                        <div class="project-actions">
-                            <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
-                            <i class="fas fa-download" onclick="downloadFile('Files/Final%20Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')" title="Download PPTX"></i>
-                        </div>
-                    </div>
-                    <h3>Advanced Prompt Engineering</h3>
-                    <p>Designed fair and inclusive AI prompts for real-world applications, with a focus on ethical considerations and bias mitigation.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">ChatGPT</span>
-                        <span class="tech-tag">Cohere</span>
-                        <span class="tech-tag">Prompt Design</span>
-                        <span class="tech-tag">Ethical AI</span>
-                    </div>
-                    <div class="project-details" style="display: none;">
-                        <div class="project-expanded">
-                            <h4>Project Overview</h4>
-                            <p>This project demonstrates the design of ethical and effective prompts for use with large language models...</p>
-
-                            <h4>LLM Tool Used</h4>
-                            <p><strong>Cohere</strong> was selected...</p>
-
-                            <h4>Prompt Variations</h4>
-                            <ul>
-                                <li><strong>Variation 1:</strong> “Please answer this question with a focus on fairness and equality...”</li>
-                                <li><strong>Variation 2:</strong> “Please answer this question while considering how bias and assumptions affect perceptions...”</li>
-                                <li><strong>Variation 3:</strong> “Please answer this question while being aware of how personal biases influence experiences...”</li>
-                            </ul>
-
-                            <h4>Analysis & Comparison</h4>
-                            <ul>
-                                <li><strong>Variation 1:</strong> Promotes efficiency vs. effort...</li>
-                                <li><strong>Variation 2:</strong> Emphasizes inclusion and cultural diversity...</li>
-                                <li><strong>Variation 3:</strong> Challenges leadership stereotypes...</li>
-                            </ul>
-
-                            <h4>Challenges Faced</h4>
-                            <ul>
-                                <li>Avoiding reinforcement of stereotypes...</li>
-                                <li>Finding balanced language...</li>
-                            </ul>
-
-                            <h4>Improvements & Next Steps</h4>
-                            <ul>
-                                <li>Include more real-life prompt examples</li>
-                                <li>Test with more LLMs</li>
-                            </ul>
-
-                            <div class="download-section">
-                                <button class="btn-download" onclick="downloadFile('Files/Final%20Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')">
-                                    <i class="fas fa-file-powerpoint"></i>
-                                    Download Full Presentation (PPTX)
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>
 
+
+<div class="project-item">
+    <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="Prompt Engineering">
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">AI & Prompt Engineering</span>
+            <div class="project-actions">
+                <i class="fas fa-eye view-project" onclick="toggleProjectDetails(this)" title="View Details"></i>
+                <!-- ✅ Fixed download path -->
+                <i class="fas fa-download" onclick="downloadFile('Files/Final%20Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')" title="Download PPTX"></i>
+            </div>
+        </div>
+
+        <h3>Prompt Engineering</h3>
+        <p>Comprehensive presentation on advanced prompt engineering techniques and AI optimization strategies.</p>
+
+        <div class="project-tech">
+            <span class="tech-tag">ChatGPT</span>
+            <span class="tech-tag">Cohere</span>
+            <span class="tech-tag">Prompt Design</span>
+            <span class="tech-tag">AI Optimization</span>
+        </div>
+
+        <!-- Expandable Project Details -->
+        <div class="project-details" style="display: none;">
+            <div class="project-expanded">
+                <h4>Presentation Overview</h4>
+                <p>This comprehensive presentation covers advanced prompt engineering techniques, best practices, and optimization strategies for working with large language models and AI systems.</p>
+
+                <h4>Key Topics Covered</h4>
+                <ul>
+                    <li><strong>Prompt Design Principles:</strong> Fundamental concepts and best practices</li>
+                    <li><strong>Advanced Techniques:</strong> Chain-of-thought, few-shot learning, and context optimization</li>
+                    <li><strong>AI Model Comparison:</strong> ChatGPT, Claude, Cohere, and other LLMs</li>
+                    <li><strong>Real-world Applications:</strong> Content creation, analysis, and automation</li>
+                    <li><strong>Optimization Strategies:</strong> Token efficiency and response quality improvement</li>
+                </ul>
+
+                <h4>Professional Application</h4>
+                <p>Developed during my role as Social Media Manager at GenAI Training, this presentation demonstrates practical application of AI technologies in content creation and digital marketing strategies.</p>
+
+                <!-- ✅ Working Download Button -->
+                <div class="download-section" style="margin-top: 1rem;">
+                    <button class="btn-download" onclick="downloadFile('Files/Final%20Project.pptx', 'Prompt_Engineering_Presentation_Sana_Kamran_Butt.pptx')">
+                        <i class="fas fa-file-powerpoint"></i>
+                        Download Full Presentation (PPTX)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Certificates Screen -->
     <div id="certificates" class="screen">
@@ -288,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="certificate-item" onclick="openCertificateModal('images/Certificate2.jpg', 'Advanced Prompt Engineering Certificate')">
+                <div class="certificate-item" onclick="openCertificateModal('images/Certificate2.jpg', 'Prompt Engineering Certificate')">
                     <div class="certificate-image">
                         <img src="images/Certificate2.jpg" alt="Prompt Engineering">
                     </div>
@@ -300,7 +285,7 @@
                             </div>
                             <i class="fas fa-award"></i>
                         </div>
-                        <h3>Advanced Prompt Engineering</h3>
+                        <h3>Prompt Engineering</h3>
                         <p>GenAI Training</p>
                         <div class="certificate-skills">
                             <span class="skill-tag">GPT</span>
@@ -334,9 +319,9 @@
                     </div>
                 </div>
 
-                <div class="certificate-item" onclick="openCertificateModal('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-10%20192450-9wCjwzWusmtFxWQjj9W5Y2L3yoVinM.png', 'Risk Assessment e-Learning Certificate')">
+                <div class="certificate-item" onclick="openCertificateModal('images/Certificate.jpg', 'Risk Assessment e-Learning Certificate')">
                     <div class="certificate-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-07-10%20192450-9wCjwzWusmtFxWQjj9W5Y2L3yoVinM.png" alt="Risk Assessment Certificate">
+                        <img src="images/Certificate.jpg" alt="Risk Assessment Certificate">
                     </div>
                     <div class="certificate-content">
                         <div class="certificate-meta">
@@ -579,9 +564,9 @@
                                     <span>Ready to Download</span>
                                 </div>
                             </div>
-                            <button class="btn-download-resume" onclick="downloadFile('Files/Sana Kamran Butt Resume  (3).pdf', 'Sana Kamran Butt Resume.pdf')">
+                            <button class="btn-download-resume" onclick="downloadFile('Files/Sana%20Kamran%20Butt%20Resume%20%20(3).pdf', 'Sana_Kamran_Butt_Resume.pdf')">
                                 <i class="fas fa-download"></i>
-                                Download Resume
+                                Download Resume (PDF)
                             </button>
                         </div>
                     </div>

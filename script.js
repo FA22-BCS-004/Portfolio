@@ -162,6 +162,13 @@ function openCertificateModal(imageSrc, caption) {
   setTimeout(() => {
     modal.style.opacity = "1"
   }, 10)
+
+  // Add click outside to close
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeCertificateModal()
+    }
+  })
 }
 
 function closeCertificateModal() {
